@@ -7,12 +7,13 @@ import React, { useState } from "react";
 
 const Expenses = (props) => {
 
-    const [filteredYear, setFilteredYear] = useState ("2020");
+    const [filteredYear, setFilteredYear] = useState ("2022");
 
     const filterChangeHandler = selectedYear => {
         console.log("Expenses.js")
         setFilteredYear(selectedYear)
     }
+
     return (
         <div>
             <Card className="expenses">
